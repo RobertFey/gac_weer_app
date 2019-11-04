@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restful import Api
-from resources.item import Item, ItemList, ItemGet, ItemSet, ItemDiv
+from resources.item import Item, ItemList, ItemGet, ItemDiv, ItemSet
+
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
